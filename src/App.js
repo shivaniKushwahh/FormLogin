@@ -1,10 +1,14 @@
 import React from "react";
-import WeatherDashboard from "./WeatherDashboard";
+import { CustomisedInputField } from "./CustomisedInputField";
 
 function App() {
+
+  const inputStyle = {
+    color: 'black'
+  }
   return (
     <>
-      <WeatherDashboard/>
+    <CustomisedInputField type='text' placeholder='inputField' disabled={false} create={true} edit={false} inputStyle={inputStyle} errorMessage={false}/>
     </>
   );
 }
