@@ -1,16 +1,16 @@
-import React from "react";
-import { CustomisedInputField } from "./CustomisedInputField";
+import React from 'react';
+import Login from './Login';
+import ShowData from './ShowData';
 
 function App() {
 
-  const inputStyle = {
-    color: 'black'
-  }
-  return (
-    <>
-    <CustomisedInputField type='text' placeholder='inputField' disabled={false} create={true} edit={false} inputStyle={inputStyle} errorMessage={false}/>
-    </>
+  return   (
+    <div>
+      <Login/>
+      <ShowData/>
+    </div>
   );
 }
+  
 
 export default App;
